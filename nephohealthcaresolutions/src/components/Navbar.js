@@ -12,6 +12,8 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 //Make navbar buttons and items bigger, add logo
 
+const logo = require("../assets/NephoLogo.png")
+
 const pages = ['Home', 'Company Overview', 'Our Services','Job Openings'];
 
 function NavbarComponent() {
@@ -31,8 +33,8 @@ function NavbarComponent() {
         <AppBar position="static" sx={{backgroundColor:'#fe6601',height:'8%'}} className='justify-center' >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1,}} />
-          <div className='mr-2'>Nepho Healthcare Solutions</div>
+          <img src={logo} className='bg-cover h-[7vh] mr-3'/>
+          <div className='mr-2' style={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold",}}>Nepho Healthcare Solutions</div>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -94,7 +96,7 @@ function NavbarComponent() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block',"&:hover":{backgroundColor:'#ed6002'}, ml:2}}
+                sx={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold", my: 2, color: 'white', display: 'block',"&:hover":{backgroundColor:'#ed6002'}, ml:2}}
               >
                 {page}
               </Button>
@@ -102,8 +104,8 @@ function NavbarComponent() {
           </Box>
 
           
-          <Button variant='contained' sx={{color:'orange', backgroundColor:'white',"&:hover":{backgroundColor:'#e3e3e3'}}}>Login</Button>
-          <Button variant='outlined' sx={{ml: 5, borderColor:'white', color:'white',"&:hover":{backgroundColor:'white', color:'orange'}}}>Contact Us</Button>
+          <Button variant='contained' sx={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold",color:'orange', backgroundColor:'white',"&:hover":{backgroundColor:'#e3e3e3'}}}>Login</Button>
+          <Button variant='outlined' sx={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold",ml: 5, borderColor:'white', color:'white',"&:hover":{backgroundColor:'white', color:'orange'}}}>Contact Us</Button>
         </Toolbar>
       </Container>
     </AppBar>
