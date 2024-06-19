@@ -14,7 +14,30 @@ import AdbIcon from '@mui/icons-material/Adb';
 
 const logo = require("../assets/NephoLogo.png")
 
-const pages = ['Home', 'Company Overview', 'Our Services','Job Openings'];
+//const pages = ['Home', 'Company Overview', 'Our Services','Job Openings'];
+
+const pages =[
+  {
+    id:1,
+    desc:'Home',
+    link:'/'
+  },
+  {
+    id:2,
+    desc:'Company Overview',
+    link:'company'
+  },
+  {
+    id:3,
+    desc:'Our Services',
+    link:'services'
+  },
+  {
+    id:4,
+    desc:'Job Openings',
+    link:'jobs'
+  }
+]
 
 function NavbarComponent() {
     
@@ -34,7 +57,7 @@ function NavbarComponent() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img src={logo} className='bg-cover h-[7vh] mr-3'/>
-          <div className='mr-2' style={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold",}}>Nepho Healthcare Solutions</div>
+          <div className='mr-2' style={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold",}}>Nepho Healthcare</div>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -66,8 +89,8 @@ function NavbarComponent() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.desc}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -94,18 +117,19 @@ function NavbarComponent() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.id}
+                href={page.link}
                 onClick={handleCloseNavMenu}
                 sx={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold", my: 2, color: 'white', display: 'block',"&:hover":{backgroundColor:'#ed6002'}, ml:2}}
               >
-                {page}
+                {page.desc}
               </Button>
             ))}
           </Box>
 
           
-          <Button variant='contained' sx={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold",color:'orange', backgroundColor:'white',"&:hover":{backgroundColor:'#e3e3e3'}}}>Login</Button>
-          <Button variant='outlined' sx={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold",ml: 5, borderColor:'white', color:'white',"&:hover":{backgroundColor:'white', color:'orange'}}}>Contact Us</Button>
+          <Button variant='contained' href='login' sx={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold",color:'orange', backgroundColor:'white',"&:hover":{backgroundColor:'#e3e3e3'}}}>Login</Button>
+          <Button variant='outlined' href='contact' sx={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold",ml: 5, borderColor:'white', color:'white',"&:hover":{backgroundColor:'white', color:'orange'}}}>Contact Us</Button>
         </Toolbar>
       </Container>
     </AppBar>
