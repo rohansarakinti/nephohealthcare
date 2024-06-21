@@ -1,5 +1,4 @@
 import { Paper } from '@mui/material'
-//<img src={item.image} alt={item.title} style={{width:'100%',height:'80vh', objectFit:'cover', objectPosition:'top'}}/>
 
 function Item({item})
 {
