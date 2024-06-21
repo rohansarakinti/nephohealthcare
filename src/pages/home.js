@@ -19,14 +19,21 @@ function HomePage() {
       <NavbarComponent />
 
       <ImgCarousel/>
+      
+      <h1 className='text-[#fe6601] font-bold text-4xl absolute top-1/2 z-10 mx-5 sm:mx-20 sm:text-6xl text-center'>Empowering Healthcare Heroes, Locally and Globally.</h1>
+      
+      <div className='w-full h-auto'>
 
-      <div className='w-full h-1/2'>
-        
-      <section className='py-40 px-20' style={{backgroundImage: `url(${subtlebg})`}}>
 
-        <div className='bg-cover bg-center w-full h-[90vh] border-4 border-[#fe6601] rounded-3xl shadow-2xl' style={{backgroundImage: `url(${welcomeHome})`}}>
-          <div className='h-full bg-gradient-to-r from-transparent to-white to-70% rounded-3xl '>
-              <div className='bg-white border-8 border-[#fe6601] absolute right-40 p-16 content-center mt-10 shadow-2xl' style={{width:'700px', height:'700px', lineHeight: '100px', borderRadius:'50%', fontSize:'50px',textAlign:'center'}}>
+
+      <section className='py-40 sm:px-20 px-5' style={{backgroundImage: `url(${subtlebg})`}}>
+        <div className='h-full block min-[1010px]:hidden min-[1010px]:w-2/3 bg-white border-4 min-[1010px]:border-l-4 min-[1010px]:border-t-4 min-[1010px]:border-b-4 border-[#fe6601] p-5 min-[1010px]:p-20 rounded-2xl min-[1010px]:rounded-l-2xl shadow-2xl z-30 mx-auto min-[1010px]:m-0'>
+          <h1 className='text-4xl text-[#fe6601] font-bold text-center underline'>Welcome To Nepho Healthcare Solutions.</h1>
+          <p className='text-lg mt-5 '>Brief descriptionLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+        </div>
+        <div className='bg-cover mt-10 bg-center w-full h-[90vh] border-4 border-[#fe6601] rounded-3xl shadow-2xl' style={{backgroundImage: `url(${welcomeHome})`}}>
+          <div className='h-full bg-gradient-to-r from-transparent to-white to-70% rounded-3xl max-[1010px]:hidden min-[1010px]:block'>
+              <div className='bg-white border-8 border-[#fe6601] absolute mx-auto right-40 p-16 content-center mt-10 shadow-2xl' style={{width:'700px', height:'700px', lineHeight: '100px', borderRadius:'50%', fontSize:'50px',textAlign:'center'}}>
                 <h1 className='text-4xl text-[#fe6601] font-bold text-center underline'>Welcome To Nepho Healthcare Solutions.</h1>
                 <p className='text-lg mt-5 '>Brief descriptionLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
                 <Button variant='outlined' href="company" sx={{paddingX:6,paddingY:1, fontFamily:"'Poppins', sans-serif", fontWeight:"bold", borderRadius:4,borderColor:'#fe6601', color:'#fe6601',"&:hover":{backgroundColor:'#fe6601', color:'white'}}}>Learn more</Button>
@@ -36,17 +43,17 @@ function HomePage() {
 
       </section>
 
-      <section className='px-20 py-22 flex items-center' style={{backgroundImage: `url(${subtlebg})`}}>
-        <div className='h-full w-2/3 bg-white border-l-4 border-t-4 border-b-4 border-[#fe6601] p-20 rounded-l-2xl shadow-2xl z-30'>
+      <section className='sm:px-20 px-5 py-22 max-[955px]:flex-col flex min- items-center' style={{backgroundImage: `url(${subtlebg})`}}>
+        <div className='h-full sm:w-2/3 bg-white max-[955px]:border-4 min-[955px]:border-r-0 min-[955px]:border-l-4 min-[955px]:border-t-4 min-[955px]:border-b-4 border-[#fe6601] p-5 lg:p-10 max-[955px]:rounded-2xl rounded-l-2xl min-[955px]::rounded-r-none shadow-2xl z-30 mx-auto sm:m-0'>
           <h1 className='text-4xl text-[#fe6601] font-bold text-center underline'>Why Join Us</h1>
           <p className='text-lg mt-5 '>Brief descriptionLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
         </div>
-        <img src={joinUs} className='  w-1/3 z-10 bg-cover rounded-3xl shadow-2xl'/>
+        <img src={joinUs} className='border-4 border-[#fe6601] sm:border-none mt-10 min-[955px]:m-0 min-[955px]:w-1/3 z-10 bg-cover rounded-3xl shadow-2xl'/>
       </section>
 
         <section className='my-52'>
 
-          <div className='grid grid-rows-1 grid-cols-2 gap-24 p-14 h-[50vh]'>
+          <div className='grid grid-rows-2 grid-cols-1 sm:grid-rows-1 sm:grid-cols-2 gap-24 sm:py-14 px-5 sm:px-14 h-1/2'>
             <div className='bg-cover w-full h-full rounded-xl shadow-2xl' style={{backgroundImage: `url(${ourServices})`}}>
               <div className='border h-full text-center content-center rounded-xl bg-[#fe6601] p-10 bg-opacity-70'>
                 <div>
@@ -54,7 +61,7 @@ function HomePage() {
                   <p className='text-lg mt-5 text-white'>Explore the different services our company offers and what how we can support you.</p>
                 </div>
                 <div className='mt-10'>
-                  <Button variant='outlined' sx={{paddingX:6,paddingY:1,fontFamily:"'Poppins', sans-serif", fontWeight:"bold",borderColor:'white', color:'white',"&:hover":{backgroundColor:'white', color:'orange'}}}>Explore</Button>
+                  <Button variant='outlined' href="services" sx={{paddingX:6,paddingY:1,fontFamily:"'Poppins', sans-serif", fontWeight:"bold",borderColor:'white', color:'white',"&:hover":{backgroundColor:'white', color:'orange'}}}>Explore</Button>
                 </div>
               </div>
             </div>
@@ -66,7 +73,7 @@ function HomePage() {
                   <p className='text-lg mt-5 text-white'>Check out our new job openings and see if they align with your interests.</p>
                 </div>
                 <div className='mt-10'>
-                <Button variant='outlined' sx={{paddingX:6,paddingY:1,borderColor:'white', fontFamily:"'Poppins', sans-serif", fontWeight:"bold",color:'white',"&:hover":{backgroundColor:'white', color:'orange'}}}>Go Now</Button>
+                <Button variant='outlined' href="jobs" sx={{paddingX:6,paddingY:1,borderColor:'white', fontFamily:"'Poppins', sans-serif", fontWeight:"bold",color:'white',"&:hover":{backgroundColor:'white', color:'orange'}}}>Go Now</Button>
                 </div>
               </div>
             </div>

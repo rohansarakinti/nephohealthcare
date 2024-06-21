@@ -5,7 +5,7 @@ import { Button } from '@mui/material'
 
 function Contactus() {
   return (
-    <div className='h-screen'>
+    <div className='h-auto'>
         <NavbarComponent />
         <div className='w-full h-full'>
 

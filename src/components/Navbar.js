@@ -9,7 +9,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 //Make navbar buttons and items bigger, add logo
 
 const logo = require("../assets/NephoLogo.png")
@@ -49,6 +48,7 @@ function NavbarComponent() {
     
       const handleCloseNavMenu = () => {
         setAnchorElNav(null);
+        console.log("getting clicked")
       };
     
     
@@ -75,12 +75,12 @@ function NavbarComponent() {
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: 'bottom',
-                horizontal: 'left',
+                horizontal: 'right',
               }}
               keepMounted
               transformOrigin={{
                 vertical: 'top',
-                horizontal: 'left',
+                horizontal: 'right',
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
@@ -88,39 +88,38 @@ function NavbarComponent() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page.desc}</Typography>
+              
+                <MenuItem key='1' onClick={handleCloseNavMenu} component="a" href="/">
+                  <Typography textAlign="center">Home</Typography>
                 </MenuItem>
-              ))}
+                <MenuItem key='2' onClick={handleCloseNavMenu} component="a" href="company" >
+                  <Typography textAlign="center">Company Overview</Typography>
+                </MenuItem>
+                <MenuItem key='3' onClick={handleCloseNavMenu} component="a" href="services">
+                  <Typography textAlign="center">Our Services</Typography>
+                </MenuItem>
+                <MenuItem key='4' onClick={handleCloseNavMenu} component="a" href="jobs">
+                  <Typography textAlign="center">Job Openings</Typography>
+                </MenuItem>
+                <MenuItem key='5' onClick={handleCloseNavMenu} component="a" href="login">
+                  <Typography textAlign="center">Login</Typography>
+                </MenuItem>
+                <MenuItem key='6' onClick={handleCloseNavMenu} component="a" href="contact">
+                  <Typography textAlign="center">Contact Us</Typography>
+                </MenuItem>
+                
+              
+
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
+          
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page.id}
                 href={page.link}
                 onClick={handleCloseNavMenu}
-                sx={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold", my: 2, color: 'white', display: 'block',"&:hover":{backgroundColor:'#ed6002'}, ml:2}}
+                sx={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold", my: 2, color: 'white', display: 'block',textAlign:'center', marginY:'auto',"&:hover":{backgroundColor:'#ed6002'}, ml:2}}
               >
                 {page.desc}
               </Button>
@@ -128,8 +127,8 @@ function NavbarComponent() {
           </Box>
 
           
-          <Button variant='contained' href='login' sx={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold",color:'orange', backgroundColor:'white',"&:hover":{backgroundColor:'#e3e3e3'}}}>Login</Button>
-          <Button variant='outlined' href='contact' sx={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold",ml: 5, borderColor:'white', color:'white',"&:hover":{backgroundColor:'white', color:'orange'}}}>Contact Us</Button>
+          <Button variant='contained' href='login' sx={{display: { xs: 'none', sm: 'block'},fontFamily:"'Poppins', sans-serif", fontWeight:"bold",color:'orange', backgroundColor:'white',"&:hover":{backgroundColor:'#e3e3e3'}}}>Login</Button>
+          <Button variant='outlined' href='contact' sx={{display: { xs: 'none', sm: 'block'},fontFamily:"'Poppins', sans-serif", fontWeight:"bold",ml: 5, borderColor:'white', color:'white',textAlign:'center',"&:hover":{backgroundColor:'white', color:'orange'}}}>Contact Us</Button>
         </Toolbar>
       </Container>
     </AppBar>

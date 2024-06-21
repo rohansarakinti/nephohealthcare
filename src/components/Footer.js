@@ -10,9 +10,9 @@ function Footer() {
               <div class="mx-auto max-w-screen-xl">
                   <div class="md:flex md:justify-between">
                       <div class="mb-6 md:mb-0">
-                          <a href="https://flowbite.com" class="flex items-center">
+                          <a href="/" class="flex items-center">
                               <img src={logo} className='bg-cover h-[7vh] mr-3 h-8' alt="FlowBite Logo" />
-                              <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Nepho Healthcare Solutions</span>
+                              <span class="self-center sm:text-2xl font-semibold whitespace-nowrap text-white">Nepho Healthcare Solutions</span>
                           </a>
                       </div>
                       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -20,16 +20,16 @@ function Footer() {
                               <h2 class="mb-6 text-sm font-semibold text-white underline uppercase">Quick Links</h2>
                               <ul class="text-white">
                                   <li class="mb-4">
-                                      <a href="https://flowbite.com" class="hover:underline">Home</a>
+                                      <a href="/" class="hover:underline">Home</a>
                                   </li>
                                   <li class="mb-4">
-                                      <a href="https://tailwindcss.com/" class="hover:underline">Company Overview</a>
+                                      <a href="company" class="hover:underline">Company Overview</a>
                                   </li>
                                   <li class="mb-4">
-                                      <a href="https://tailwindcss.com/" class="hover:underline">Our Services</a>
+                                      <a href="services" class="hover:underline">Our Services</a>
                                   </li>
                                   <li class="mb-4">
-                                      <a href="https://tailwindcss.com/" class="hover:underline">Job Openings</a>
+                                      <a href="jobs" class="hover:underline">Job Openings</a>
                                   </li>
                               </ul>
                           </div>
@@ -54,7 +54,7 @@ function Footer() {
                                       <a href="#" class="hover:underline">+1 123-456-7890</a>
                                   </li>
                                   <li class="mb-4">
-                                      <a href="#" class="hover:underline">someone@gmail.com</a>
+                                      <a href="#" class="hover:underline break-all">someone@gmail.com</a>
                                   </li>
                               </ul>
                           </div>
@@ -62,7 +62,7 @@ function Footer() {
                   </div>
                   <hr class="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
                   <div class="sm:flex sm:items-center sm:justify-between">
-                      <span class="text-sm text-white sm:text-center ">© 2024 <a href="https://flowbite.com" class="hover:underline">Nepho Healthcare Solutions™</a>. All Rights Reserved.
+                      <span class="text-sm text-white sm:text-center ">© 2024 <a href="/" class="hover:underline">Nepho Healthcare Solutions™</a>. All Rights Reserved.
                       </span>
                       <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                           <a href="#" class="text-white hover:text-gray-900">
