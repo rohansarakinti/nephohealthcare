@@ -20,18 +20,17 @@ function HomePage() {
 
       <ImgCarousel/>
       
-      <h1 className='text-[#fe6601] font-bold text-4xl absolute top-1/2 z-10 mx-5 sm:mx-20 sm:text-6xl text-center'>Empowering Healthcare Heroes, Locally and Globally.</h1>
+      <h1 className='text-[#fe6601] font-bold text-4xl absolute top-1/2 z-10 mx-5 sm:mx-20 max-[773px]:text-5xl min-[773px]:text-6xl text-center lg:mx-36'>Empowering Healthcare Heroes, Locally and Globally.</h1>
+      <a href="#company-overview" class="absolute max-w-[900px] left-10 right-10 uppercase sm:left-52 sm:right-52 ml-auto mr-auto text-center top-3/4 z-20 text-white bg-[#fe6601] border-2 border-[#fe6601] hover:bg-white hover:border-2 hover:border-[#fe6601] hover:text-[#fe6601] focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-lg px-10 py-4 text-center duration-150">Get Started</a>
       
       <div className='w-full h-auto'>
 
-
-
-      <section className='py-40 sm:px-20 px-5' style={{backgroundImage: `url(${subtlebg})`}}>
+      <section id="company-overview" className='py-40 sm:px-20 px-5' style={{backgroundImage: `url(${subtlebg})`}}>
         <div className='h-full block min-[1010px]:hidden min-[1010px]:w-2/3 bg-white border-4 min-[1010px]:border-l-4 min-[1010px]:border-t-4 min-[1010px]:border-b-4 border-[#fe6601] p-5 min-[1010px]:p-20 rounded-2xl min-[1010px]:rounded-l-2xl shadow-2xl z-30 mx-auto min-[1010px]:m-0'>
           <h1 className='text-4xl text-[#fe6601] font-bold text-center underline'>Welcome To Nepho Healthcare Solutions.</h1>
           <p className='text-lg mt-5 '>Brief descriptionLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
         </div>
-        <div className='bg-cover mt-10 bg-center w-full h-[90vh] border-4 border-[#fe6601] rounded-3xl shadow-2xl' style={{backgroundImage: `url(${welcomeHome})`}}>
+        <div className='bg-cover mt-10 bg-center w-full h-[800px] border-4 border-[#fe6601] rounded-3xl shadow-2xl' style={{backgroundImage: `url(${welcomeHome})`}}>
           <div className='h-full bg-gradient-to-r from-transparent to-white to-70% rounded-3xl max-[1010px]:hidden min-[1010px]:block'>
               <div className='bg-white border-8 border-[#fe6601] absolute mx-auto right-40 p-16 content-center mt-10 shadow-2xl' style={{width:'700px', height:'700px', lineHeight: '100px', borderRadius:'50%', fontSize:'50px',textAlign:'center'}}>
                 <h1 className='text-4xl text-[#fe6601] font-bold text-center underline'>Welcome To Nepho Healthcare Solutions.</h1>

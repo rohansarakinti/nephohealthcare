@@ -12,7 +12,7 @@ function Footer() {
                       <div class="mb-6 md:mb-0">
                           <a href="/" class="flex items-center">
                               <img src={logo} className='bg-cover h-[7vh] mr-3 h-8' alt="FlowBite Logo" />
-                              <span class="self-center sm:text-2xl font-semibold whitespace-nowrap text-white">Nepho Healthcare Solutions</span>
+                              <span class="self-center sm:text-2xl font-semibold text-white hover:underline">Nepho Healthcare Solutions</span>
                           </a>
                       </div>
                       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

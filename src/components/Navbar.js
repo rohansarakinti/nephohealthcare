@@ -57,7 +57,7 @@ function NavbarComponent() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img src={logo} className='bg-cover h-[7vh] mr-3'/>
-          <div className='mr-2' style={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold",}}>Nepho Healthcare</div>
+          <div className='mr-2 hover:underline cursor-pointer' style={{fontFamily:"'Poppins', sans-serif", fontWeight:"bold",}} href="/">Nepho Healthcare</div>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton

@@ -66,7 +66,7 @@ function Jobopenings() {
                                 <span>Free updates: </span>
                             </li>
                         </ul>
-                        <a href="contact" class="text-white bg-[#fe6601] border-2 border-white hover:bg-white hover:border-2 hover:border-[#fe6601] hover:text-[#fe6601] focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
+                        <a href="contact" class="text-white bg-[#fe6601] border-2 border--[#fe6601] hover:bg-white hover:border-2 hover:border-[#fe6601] hover:text-[#fe6601] focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center duration-100">Get started</a>
                     </div>
                 </div>
             </div>
